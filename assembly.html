@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  image.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning">
+  <meta name="keywords" content="Robot Hand, Dexterous Manipuation, Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:site_name" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+  <meta property="og:description" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+  <meta property="og:url" content="http://v2.leaphand.com" />
+  <meta property="og:image" content="http://v2.leaphand.com/static/videos/teaser.png" />
+  <!-- <meta property="og:video" content="http://leaphand.com/static/videos/compressed.mp4" /> -->
+
+  <meta property="article:publisher" content="http://v2.leaphand.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leap Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+  <meta name="twitter:url" content="http://v2.leaphand.com/" />
+  <meta name="twitter:image" content="http://v2.leaphand.com/static/figures/teaser.png"/>
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" />
+
+
+  <title>LEAP Hand V2: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning</title>
+
+  <link href="./static/css/fonts.googleapis.com_css_family=Google+Sans_Noto+Sans_Castoro.css"
+        rel="stylesheet">
+
+  <script src="./static/js/ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.min.js"></script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_gh_jpswalsh_academicons@1_css_academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_css_bootstrap.min.css">
+  <script src="./static/js/isInViewport.min.js"></script>
+  <script src="./static/js/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_js_bootstrap.bundle.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <style>
+    .nav-item
+    {
+      font-size: 25px;
+      
+    }
+    .navbar-nav .nav-link {
+      margin-right: 7px;
+      margin-left: 7px;
+    }
+    .accordion-button.collapsed {
+    background:#DCDCDC;
+    border: 1px solid #464646; /* Border color and thickness */
+    }
+    .accordion-button:not(.collapsed) {
+    border: 1px solid #747474; /* Border color and thickness */
+    }
+    </style>    
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BCD5FA;">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Collapsible wrapper -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+            <!-- Left links -->
+            <ul class="navbar-nav mb-5 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./">Main Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./parts">Parts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cad_request">CAD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./assembly">Assembly</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+            <div class="row">
+                <div class="col"  style="text-align:center;">
+                  <div class="sketchfab-embed-wrapper"> <iframe title="LEAP Full Assembly Left" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="360" src="https://sketchfab.com/models/67d1215db44541cfb20ec8d87e3c8a27/embed?camera=0"> </iframe> </div>
+                </div>
+                <div class="col">
+                  <div class="sketchfab-embed-wrapper"> <iframe title="LEAP Full Assembly Right" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="360" src="https://sketchfab.com/models/3633c296553b434fb468fce88364f995/embed?camera=0"> </iframe> </div>
+                </div>
+              </div>
+              **For the left hand, the only adjustments are mirroring the upper and lower parts of the palm in the STP and using a left-bottom plate to ensure the text is not mirrored.
+              <br>
+              <br>
+
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>MCP Base Holders</strong></h3>    
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Insert MCP Holder Bearings:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>
+                                <li>Insert one bearing into each of the MCP Holder Inners and Outers. If insertion is difficult, use a clamp to push them in. Ensure the bearings sit flush within their slots.</li>
+                                <li>Match pairs of MCP Holder Inner and Outers. Ensure both are either unmirrored or mirrored, so they connect face to face with the cutouts on the same side.</li>
+                            </ol>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_bearing.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">One MCP Holder Set of matching Inner and Outer.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_bearing_mirrored.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">One MCP Holder Mirrored Set of matching Inner and Outer.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Finding correct MCP Forward Parts:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>
+                                <li>The MCP Holder Inner has an axle sticking out of it where a gear will be placed.  Note that this axle also has a tendon channel cut vertically near its base.</li>
+                                <li>Find an MCP Forward and locate the tendon hole.  This hole is on the side without the gear and passes all the way to the top.  
+                                <li>When positioning the MCP Forward inside, make sure the tendon hole lines up with the MCP Forward Axle's tendon channel.  If it does not, then find another MCP forward that matches this orientation.</li>
+                                <li>Find an Axle Gear.  All Axle Gears are identical, with no mirrored versions, and feature a hole that goes all the way through.</li> 
+                                <li>Test fit the MCP Forward between the MCP Holder bearings while sliding the Axle Gear onto the axle.  If the gears do not mesh properly, flip the Axle Gear around until they do.</li>                               
+                            </ol>
+                            <p class="text-success"><em>Tip:</em> Double-check the orientation the parts to ensure correct alignment!</p>
+
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_tendon_channel.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">The MCP Holder tendon channel is circled in red.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_hole.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">The MCP Forward Hole is circled in red.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Clamping the MCP Holder Assembly:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>
+                                    Insert the MCP Forward into the bearings of each MCP Holder while simultaneously sliding the Axle Gear onto the axle.
+                                </li>
+                                <li>
+                                    Make sure this presses down firmly all the way, you may need to use a clamp around it to press it down tight.
+                                </li>
+                                <li>
+                                    Once it's tight, secure the MCP Base Assembly by fastening an M2.5 20mm bolt through the axle.
+                                </li>
+                                <li>
+                                    Repeat this process five times to create three assemblies of one orientation and two of the mirrored orientation. Ensure that the thumb also has one correctly oriented assembly.
+                                </li>
+                                <li>
+                                    If your parts were purchased from PCBWay, you will have an extra set of MCP Holder assemblies (three of each orientation). This redundancy is to prevent potential issues caused by incorrect parts being provided.
+                                </li>
+                            </ol>
+                            <p class="text-success"><em>Tip:</em> Double-check the orientation the parts to ensure correct alignment!</p>
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="figure text-center">
+                                        <img style="width:90%" class="img-fluid" src="./static/assm_img/mcp_fastened_module.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">Place the M2.5 20mm Bolt through the MCP Holder Axle.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure text-center">
+                                        <img style="width:90%" class="img-fluid" src="./static/assm_img/mcp_assm.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">MCP Base Assembly</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Insert the MCP Holder Assemblies:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            <p>Once you have assembled the MCP Holder Assemblies, follow these steps to integrate them into the palm structures:</p>
+                            <h4>Fingers Lower Palm Integration</h4>
+                            <ol>
+                                <li>
+                                    Locate the 4 Fingers Lower Palm and one of the MCP Holder assemblies. Ensure the tendon channel on the MCP Holder is positioned towards the <em>inside</em> the palm, with the geared part facing towrads the <em>outside</em>.
+                                </li>
+                                <li>
+                                    Test fit the MCP Holder assembly into the top section of the 4 Fingers Lower Palm. If it doesn't fit due to manufacturing tolerances, use a file or sandpaper to adjust the fit.
+                                </li>
+                                <li>
+                                    Secure the MCP Holder to the palm using:
+                                    <ul>
+                                        <li>Two 20mm bolts from the bottom, passing through the MCP Holders and into the 4 Fingers Lower Palm.</li>
+                                        <li>Two M2 6mm screw from the top, fastening through the palm's jut-outs into the MCP Holder. <em>Note:</em> Ensure these are 6mm screws, longer screws will damage the parts.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Complete the process for all four MCP Holder assemblies, integrating them into the 4 Fingers Lower Palm.
+                                </li>
+                            </ol>
+                            <h4>Thumb Lower Palm Integration</h4>
+                            <ol>
+                                <li>
+                                    For the Thumb Lower Palm, ensure the geared part of the MCP Holder assembly faces the side of the motor mounts. The tendon channel should be positioned away from those motor mounts.
+                                </li>
+                                <li>
+                                    Follow the same process as with the fingers, ensuring proper alignment and using the same screws.
+                                </li>
+                            </ol>
+                            <p class="text-success"><em>Tip:</em> Double-check the orientation the parts to ensure correct alignment!</p>
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/inserted_mcp_assemblies_4_fingers.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">Inserted MCP Assemblies in the 4 finger lower palm with meshed gears in the right orientations.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/inserted_mcp_assemblies_thumb.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">Inserted MCP Assembly in the thumb lower palm with meshed gears in the right orientations.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>MCP Motors and Gears</strong></h3>  
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                        Attach Horn Gears:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>
+                                <li>Locate five XM430-W210-Ts and five horn gears.</li>
+                                <li>The Horn Gear should go on the motor horn of the XM430.  Fasten three of the normal orientation and two of the mirrored gears onto the horn using M2.5 10mm screws.</li>
+                                <br>
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/motor_horns.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center"></figcaption>
+                                </figure>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        MCP Motor Parts and Orientations:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>                               
+                                <li>Focus on the index finger first. Locate its position on the 4-Finger Lower Palm.  The XM430 motor will have the the horn gear facing inward, oriented towards the center.</li>
+                                <li>Next, find a Screw Gear and a Screw Bushing.</li>
+                                <li>The Screw Gear and Screw Bushing will replace the M2.5 screw in the XM430 motor corner that is towards the front of the hand.</li>
+                                <li>Test fit the Screw Gear onto the Axle Gear on the 4-Finger Lower Palm. If it meshes, great! If not, swap it for a mirrored Horn Gear and a Mirrored Screw Gear, then try again. Note: The correct gear may not spin smoothly but should still fit properly.</li>
+                                <li>Once you find the right screw gear, position the XM430 motor with the horn gear facing towards the center of the 4-Finger Palm.</li>    
+                            </ol>
+                            <p>Great, the parts are setup.  The next step will explain how to screw the components together.</p>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_forward_no_screw.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Front View of the MCP Forward Motor for test fitting.</figcaption>
+                                </figure>
+                                
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/index_motor_mcp.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Test Fitting the MCP Joint.  Note how the gears mesh together.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                        Fastening It Together:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                    <div class="accordion-body">
+                        <p>Once you verify the 4 gears are meshing, it is time to fasten them.</p>
+                        <p class="fs-6">
+                            <ol>                               
+                                <li>First remove the m2.5 screw facing towards the front of the hand in the top corner of the Dynamixel XM430.</li>
+                                <li>Stack the screw bushing, screw gear together on top of the corner of the Dynamixel.  Add some grease between the screw bushing and screw gear.</li>
+                                <li>Screw it down very tightly with a M2.5 22m screw and importantly apply some Red Locktite.</li>
+                                <li>Use 6 M2.5 4mm bolts and fasten the motor to the four fingers lower palm.</li>
+                                <li>Next, repeat the steps for the pinky finger. Replace the front corner M2.5 screw on the motor with the Screw Gear and Screw Bushing as before.</li>
+                                <li>Now, repeat the process for the middle and ring fingers. Replace the back corner M2.5 screw on each motor with the Screw Gear and Screw Bushing.</li>
+                                <li>Each middle and ring finger motor should be fastened with two M2.5 4mm or 6mm bolts. Optionally, you can also remove the bottom two M2.5 bolts from the Dynamixel Motor.  You can refasten with m2.5 16mm bolts through the 4-Finger Lower Palm Plate holes.</li>
+                                <li>The thumb motor should be fastened with six M2.5 4mm bolts. Optionally, you can also remove the back four M2.5 bolts from the Dynamixel Motor and refasten them and secure the thumb lower palm plate through it.</li>
+                            </ol>
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_forward_with_screw.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">Front View of the MCP Forward Motor with screw.</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_forward_4_fingers.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">MCP Forward assembled in all 4 fingers.</figcaption>
+                                    </figure>
+                                    
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/index_motor_mcp.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">MCP Forward for the Index Joint Assembled together.</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_forward_thumb.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">MCP Forward assembled in the thumb.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <p class="text-success"><em>Tip:</em> All the gears should fit in tightly.  If they don't spin freely that's okay, we will fix that in the next step.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                       Breaking in the MCP Forward Gears:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>                               
+                                <li>Ensure all four M2 screws are tightly secured in the MCP forward assemblies, and the motors are fastened securely.</li>
+                                <li>Connect one of the MCP motors to a 12V power source, a U2D2, and the Dynamixel Wizard software on your computer.</li>
+                                <li>Use the software to scan for the motor and switch the motor to current control mode.</li>
+                                <li>Turn the torque on and move the MCP module forward and backward using the current control slider.</li>
+                                <li>If the motor doesn't move, try applying some pressure with your hands in the same direction as applied by the motor.</li>
+                                <li>Continue this process until the motor and joint spin more smoothly.</li>
+                                <li>Repeat these steps for the other four motors.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Tendons and Bottom Plate</strong></h3>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="true" aria-controls="panelsStayOpen-collapseNine">
+                        Prepare Pulley Motors:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingNine">
+                    <div class="accordion-body">
+                        <p class="fs-6">
+                            <ol>
+                                <li>Locate five XM430-W350-Ts and five of their thrust washers and horns.</li>
+                                <li>Use the included M2.5 6mm screw to fasten each of them onto the motors.</li>
+                                <li>Locate 5 pulleys.</li>
+                                <li>Cut 5 pieces of <a href="https://a.co/d/eFoiS2e" style="font-weight:bold">Berkley Trilene Big Game Monofilament Fishing Line</a> (100lb, Clear, Mono Leader, 0.99 mm Diameter) roughly 60cm long each.</li>
+                                <li>Double Knot one side of the tendon.  Feed the non-knotted end into the middle of the pulley though one of the four holes on the sides.  The knot should be in the middle of the pulley.</li>
+                                <li>Pull the knot tight and ensure it doesn't pull through the hole.  Cut the excess off the knot.</li>
+                                <li>Attach each pulley to each motor horn using 4 m2 10mm screws.</li>
+                            </ol>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/motors_with_horns.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Horn on the XM430-W350-T Motors.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/motors_with_pulleys.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Pulley and Tendon on the XM430-W350-T Motors.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                       Route Tendons and Fasten Motors:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                    <div class="accordion-body">                       
+                        <div class="row">
+                            <div class = "col-md-7">
+                                <p>Lets start with the index finger motor:</p>
+                            <p class="fs-6">
+                                <ol>
+                                    <li>Locate one tendon, one motor, and the 4-Finger Assembly.</li>
+                                    <li>Rotate the MCP Forward so it faces upward, and push the tendon through the bottom hole of the MCP Forward module.</li>
+                                    <li>Pull the tendon through as it emerges from the top of the MCP Forward module.</li>
+                                    <li>Find the tendon channel on the MCP Holder and push the tendon into it.  This ensures the tendon does not get caught in the MCP gears.</li>
+                                    <li>Loosely secure the motor to the 4-Finger Lower Palm using two M2.5 screws.</li>  
+                                </ol>                            
+                            </p>
+                            <p>Now, let's move on to the pinky finger and thumb:</p>
+                            <ol>
+                                <li>Do the same exact thing for the pinky finger.</li>
+                                <li>For the thumb, insert the thumb tendon through the MCP Forward like usual. Secure the thumb curl motor using four M2.5 4mm screws. Optionally, remove the back four M2.5 bolts from the Dynamixel Motor, refasten them, and attach them through the thumb lower palm plate for additional support.</li>
+                            </ol>
+                            </div>
+                            <div class = "col-md-5">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_hole.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">The MCP Forward Hole cirlced in red that you must push the tendon through.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class = "col-md-5">
+                                <figure class="figure text-center">
+                                    <img style="width:90%" class="img-fluid" src="./static/assm_img/index_pinky_tendon.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Index and Pinky with Tendons.  Pull the tendons into their respective channels behind the Middle and Ring finger MCP Forward motors.</figcaption>
+                                </figure>
+                            </div>
+                            <div class = "col-md-7">
+                                <figure class="figure text-center">
+                                    <img style="width:90%" class="img-fluid" src="./static/assm_img/thumb_tendon.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Thumb with Tendon.  Note the tendon passing smoothly through the channel.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <p>Now, let's do the middle and ring fingers:</p>
+                            <ol>
+                                <li>Rotate the MCP Forward so it faces upward on these two motors and push the tendon through the bottom hole of the MCP Forward module as before.</li>
+                                <li>These motors go underneath the MCP Forwards for their respective fingers but there is no place on the 4-Finger Lower Palm to secure these motors.</li>               
+                                <li>Instead, locate the 4 Fingers Bottom.</li>
+                                <li>Place these motors into their respective slots in the front of 4 Fingers Bottom with the pulleys facing towards the center of the hand.</li>
+                            </ol>
+                        <p class="text-success"><em>Tip: </em>If the tendon has difficulty passing through the MCP hole, you can use a long, flexible drill bit—such as those designed for clearing 3D printer nozzles or heat breaks—to deburr the channel.</p>
+                        <br>
+                        <p>Finally, fasten 4 Fingers Bottom:</p>
+                            <ol>
+                                <li>Pull all the tendons through the top to ensure they are taut and not loose.</li>
+                                <li>Carefully slide the 4-Fingers Bottom, along with the two motors, up and over the other motors.</li>
+                                <li>Take care not to pinch any tendons during this step.</li>
+                                <li>Secure each motor using at least four M2.5 4mm screws, fastening them all the way around the hand.  You do not need to use all of the screw holes necessarily.</li>
+                                <li>Ensure the tendons remain pulled through their respective holes and not caught in the gear teeth.</li>
+                            </ol>
+                            <div class="row">
+                                <div class = "col-md-5">
+                                    <figure class="figure text-center">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/tendon_bottom_plate.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">All 4 motors are installed, and the tendons are properly positioned in their respective MCP holes.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class = "col-md-7">
+                                    <figure class="figure text-center">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/clamp_bottom_plate.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">The 4 Fingers Bottom is attached to the motors. The clamp can optionally assist during assembly by ensuring the holes are aligned correctly.  The motors are securely pressed against the top to prevent mechanical play.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>MCP Side and Fingers</strong></h3>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="true" aria-controls="panelsStayOpen-collapseEleven">
+                        Attach MCP Side Motors:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingEleven">
+                    <div class="accordion-body">
+                        <div class="content has-text-justified">
+                            <h4>Notes before we begin:</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img style="width:100%; display: block; margin-left: auto; margin-right: auto;" src="./static/assm_img/home_pose.JPG" />
+                                        The dots and dashes I've outlined on the motor horn indicate the Home position for the Dynamixel XC330s. Most Dynamixels are shipped already oriented in this home position.
+                                        For proper MCP side assembly, ensure the motor horns stay in this home position when attaching.<br>
+                                        <br>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img style="width:100%; display: block; margin-left: auto; margin-right: auto;" src="./static/assm_img/screws.JPG" />
+                                        <b>There are three distinct types of screws used in assembly:</b>
+                                        <br><br>
+                                        <b>TAP Screws (Left):</b> These Phillips head screws have serrated edges and come included with the Dynamixel brackets <br>
+                                        <b>Standard Dynamixel M2x4mm (Middle):</b> These are regular, non-TAP screws supplied by Dynamixel <br>
+                                        <b>Hex Head Screws (Right):</b> These are standard hex-head screws
+                                        <br>
+                                        <strong>Note in the next few assembly steps where we refer to tap screws.</strong>
+                                        <br>                                       
+                                    </div>
+                                </div>
+                        </div>
+                        <br>
+                        <h4>Now to assemble the motors:</h4>
+                        <p class="fs-6">
+                                <ol> <li>Locate the five XC330-T288-T motors and their accompanying screws.</li> 
+                                    <li>Ensure that the motor horns are in the "home" position, as shown in the image below.</li> 
+                                    <li>Carefully insert each motor into its designated slot on the five MCP Forwards.</li> 
+                                    <li>If the motor horn has shifted, realign it with the holes on the bottom in the right home pose.</li> 
+                                    <li>Secure each motor with the four M2 4mm TAP screws that come from Dyanmixel.</li>
+                                    <li>Take the MCP Spacers and insert them into the holes at the top of the MCP Forwards.</li> 
+                                    <li>Fasten each spacer to the motor using an M2.6 6mm TAP screw. These screws are included with the FPX330-H101 Dynamixel set.</li> 
+                                    <li>Add a long Dynamixel cable to one of the connectors of each of the XC330 motors.  This is easier to do before the fingers are placed on the motors.</li>
+                                </ol> 
+                                <p class="text-success"><em>Tip: </em>If you're having trouble aligning the motor horn during insertion, you can power the motor in position mode while inserting it to keep the horn aligned.</p>  
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_side_back.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Bottom View of MCP Side Motor, note the double dash on the side of the horn marked in white for visibility.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_spacer_no_screw.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Top View of MCP Side motor with the spacer inserted.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mcp_spacer_screw.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Top View of MCP Side motor with the spacer screwed down.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingNinty">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNinty" aria-expanded="false" aria-controls="panelsStayOpen-collapseNinty">
+                            Attach Fingers
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseNinty" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNinty">
+                        <div class="accordion-body">
+                            <ol> 
+                                <li>Locate the 3D printed fingers and remove the support material by gently bending them back and forth and using a small cutter.</li>
+                                <li>Push the tendon through each of the center channel pieces of each finger.  Tie a double knot at the end of the tendon and cut off the excess.</li>
+                                <li>Make sure one connector of the motor has a <a href="https://www.robotis.us/robot-cable-x3p-180mm-10pcs/">long 180mm cable</a> connected to it.</li>
+                                <li>Push each finger FIRMLY onto the MCP Side motors so that the two holes on the top and two holes on the bottom of the motor line up.</li>
+                                <li>Use four M2 8mm TAP screws (comes with the motors and are black with phillips head) to attach each finger to each motor.</li>                                        
+                            </ol>
+                            <div class="row">
+                                <div class="col">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/finger_front_tendon.JPG" onclick="this.requestFullscreen()"/>
+                                </div>
+                                <div class="col">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/finger_mounting.JPG" onclick="this.requestFullscreen()"/>
+                                </div>
+                            </div>
+                            <br>                
+                            <p class="text-success"><em>Tip: </em>Make sure the fingers are FIRMLY pushed onto the XC330 motors before screwing them in so you do not damage the holes on the motors.</p>   
+                        </div>
+                    </div>
+                </div>
+            <br><br>
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Forming the Palm</strong></h3>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwelve">
+                        Connecting Palm Lowers Together:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwelve">
+                    <div class="accordion-body">
+                            <p>Locate one XM430-W210-T motor, one XM430-W350-T motor, and two HN12-I101 sets.  Press a HN12-I101 to the back of each motor.</p>
+                            <h4>Connecting 4 Fingers Lower to No Fingers Lower</h4>
+                            <p class="fs-6">
+                                <ol> 
+                                    <li>Identify the central cavity in the No Fingers Lower component and place the XM430-W350-T motor into the cavity.</li> 
+                                    <li>Align the motor's screw holes with the designated locations and insert approx 10 M2 6mm screws.</li> 
+                                    <li>Locate the Thumb Lower motor mount.  Secure this mount to the motor using six M2.5 6mm screws.</li> 
+                                </ol>
+                                <h4>Connecting No Fingers Lower to Thumb Lower</h4>
+                                <ol>
+                                    <li>Identify the central cavity in the 4 Fingers Lower component and place the XM430-W210-T motor into the cavity.</li>
+                                    <li>Align the motor's screw holes with the designated locations and insert approx 4 M2 8mm screws into the horn and approx 6 M2 6mm screws into the idler.</li> 
+                                    <li>Locate the No Fingers Lower motor mount.  Secure this mount to the motor using six M2.5 6mm screws.</li> 
+                                </ol>
+                            </p>
+                            <p class="text-success"><em>Tip: </em>It may be difficult to get all of the screws into the horns and idlers, this is normal.  Just make sure the palm feels secure.</p>  
+                            <div class="row">
+                                <div class="col">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/palm_motors.JPG" onclick="this.requestFullscreen()"/>               
+                                </div>  
+                                <div class="col">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/palm_motor_screws.JPG" onclick="this.requestFullscreen()"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseThirteen">
+                        Mounting Palm Uppers:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThirteen">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Palm Upper on 4 Fingers</h4>
+                                    <ol>
+                                        <li>Slot the Palm Upper over the Palm Lower.  Attach with two M3 6mm screws.</li>
+                                    </ol>
+                                <h4>Palm Upper on No Fingers</h4>
+                                    <ol>
+                                        <li>Slot the Palm Upper over the Palm Lower.  Attach with two M3 6mm screws.</li>
+                                        <li>Optionally you can also add one M3 6mm brass insert to the inner corner of Upper No fingers and fasten it to the No Fingers Lower using an M3 6mm screw. </li>
+                                    </ol>
+                                <h4>Palm Upper on Thumb</h4>
+                                    <ol>
+                                        <li>Slot the Palm Upper over the Palm Lower.  Attach with two M3 6mm screws.</li>
+                                    </ol>
+                                <p class="text-success"><em>Tip:</em> The palm upper may feel a bit stiff initially, but this is normal. After being actuated a few times, they will bend and slide over each other with ease.</p>
+                            </div>
+                            <div class="col">
+                                <img style="width:100%" class="img-fluid" src="./static/assm_img/palm_top.JPG" onclick="this.requestFullscreen()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Mounting and Electronics</strong></h3>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseFourteen">
+                        U2D2 Mount:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFourteen">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-6">
+                                        <ol>                               
+                                            <li>Find at least two M2 6mm brass inserts and a soldering iron.</li>
+                                            <li>Heat the soldering iron to around 240C</li>
+                                            <li>Press the brass inserts into the holes</li>
+                                            <li>Place the U2D2 in with the USB port facing out.</li>
+                                            <li>Screw the U2D2 cover over it with M2 6mm screws.</li>
+                                        </ol>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img style="width:100%" class="img-fluid" src="./static/assm_img/u2d2_assm.JPG" onclick="this.requestFullscreen()"/>
+                                        <figcaption class="figure-caption text-center">The U2D2 is fastened under the U2D2 Cover.</figcaption>
+                                    </figure>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFifteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseFifteen">
+                        Arm Mounts:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFifteen">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Four Fingers Bottom Mount (recommended):</h4>
+                                <ol>
+                                    <li>Find at least eight M3 6mm brass inserts and a soldering iron.</li>
+                                    <li>Heat the soldering iron to around 240C</li>      
+                                    <li>Press the brass inserts into the holes around the bottom perimeter of 4 Fingers Bottom.</li>   
+                                    <li>Screw the 4 Fingers Mount onto your preferred arm using M6 screws.</li>       
+                                    <li>Use M3 6mm screws on the perimeter of the mount to screw it into 4 Fingers Bottom.</li>  
+                                </ol>
+                                    <br>
+                                
+                                <h4>No Fingers Palm Lower Mount:</h4> 
+                                <ol>
+                                    <li>Gather at least two M3 6mm brass inserts and a soldering iron.</li>
+                                    <li>Heat the soldering iron to approximately 240°C.</li>
+                                    <li>Carefully press the brass inserts into the designated holes on the top of the No Fingers Mount.</li>
+                                    <li>Secure the mount to the No Fingers Lower Palm using four M3 screws.</li>
+                                    <li>Attach the assembly to your preferred arm using M6 screws.</li>     
+                                </ol>
+                                <p class="text-success"><em>Tip: </em>While No Fingers Mount is more anatomically correct, it is more prone to breakage and motor strain so I do not recommend it.</p>   
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/mount.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">The Four Fingers Bottom Mount is attached using M3 screws to the hand and M6 screws to the arm.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <br>                
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSixteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseSixteen">
+                        Programming Motor IDs:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSixteen">
+                    <div class="accordion-body">
+                        <p>Please follow a similar instructions to the LEAP V1 in the setup electronics part of <a href="https://v1.leaphand.com/assembly">this page.</a>
+                        Instead the IDs are as follows:</p>
+                        <table class="table table-striped" style="table-layout: fixed; width: 100%; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">MCP Side</th>
+                                    <th scope="col">MCP Forward</th>
+                                    <th scope="col">PIP/DIP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Index</th>
+                                    <td><b>0</b></td>
+                                    <td><b>1</b></td>
+                                    <td><b>2</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Middle</th>
+                                    <td><b>3</b></td>
+                                    <td><b>4</b></td>
+                                    <td><b>5</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ring</th>
+                                    <td><b>6</b></td>
+                                    <td><b>7</b></td>
+                                    <td><b>8</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pinky</th>
+                                    <td><b>9</b></td>
+                                    <td><b>10</b></td>
+                                    <td><b>11</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Thumb</th>
+                                    <td><b>12</b></td>
+                                    <td><b>13</b></td>
+                                    <td><b>14</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align: center; font-weight: bold;">Palm Thumb: 15</td>
+                                    <td colspan="2" style="text-align: center; font-weight: bold;">Palm 4 Fingers: 16</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSeventeen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeventeen" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeventeen">
+                        Wiring the Motors Together:
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeventeen">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <p>
+                                    Dynamixel motors are bus-based servos, meaning each motor has a unique ID and they all share a common wiring system (the bus). The connectors on the back of the motors are identical, and the motors are interconnected via these connectors.
+                                    I recommend using the MCP sides and palm motors as the terminus points for the bus. This results in a total of 7 terminus points for the motors plus 1 for the U2D2. Next, create a central splitter power cable similar to the one used in the LEAP Hand v1, but with 8 connectors extending from it, like an octopus. Then, you can chain the motors out from there using normal cables. This setup will ensure that all motors are connected to each other and to the U2D2. 
+                                </p>  
+                                <br> 
+                                <p class="text-success"><em>Warning:</em> Ensure that the MCP Side cables are not pulled out or caught in the gears when the MCP moves up and down, as this could damage the motors. I strongly recommend following the wiring setup shown in the image above.</p>   
+                       
+                            </div>
+                            <div class="col-5">
+                                <figure class="figure">
+                                    <img style="width:100%" class="img-fluid" src="./static/assm_img/wiring_fingers.JPG" onclick="this.requestFullscreen()"/>
+                                    <figcaption class="figure-caption text-center">Ziptie the MCP side motor cables to the front of the fingers.  The cables should be IN FRONT of the logo bar and can be ziptied to it. </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingEighteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEighteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseEighteen">
+                        Finishing up!
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEighteen">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>Congratulations on completing the assembly of the hand!</strong><br><br>
+                            When powering on the hand for the first time and running the tensioning script, ensure that the tendons are properly wrapped and seated inside the pulley grooves: 
+                            <ol>               
+                                <li>The tendons for the index and pinky fingers should wrap around the pulley towards the front of the hand.</li>
+                                <li>The tendons for the middle and ring fingers should wrap around the pulley towards the back of the hand.</li>
+                            </ol>
+                            For more details, refer to the LEAP Hand v2 Software API.
+                        </p>                          
+                        <p class="text-success"><em>Tip:</em> If you are having trouble with the fingers curling, check that the tendons are properly on the pulleys and the knots are tied tightly.</p>   
+                    </div>
+                </div>
+            </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+      <br />
+      <!-- <p>Dexbotics LLC.</p> -->
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var mainLoopId = setInterval(function(){
+    $('video').not('#teaser').each(function(){
+  if ($(this).is(":in-viewport")) {
+      $(this)[0].play();
+  } else {
+      $(this)[0].pause();
+  }
+  })
+},200);
+
+
+</script>
+</body>
+</html>

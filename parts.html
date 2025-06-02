@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning">
+    <meta name="keywords" content="Robot Hand, Dexterous Manipuation, Machine Learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:site_name" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+    <meta property="og:description" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+    <meta property="og:url" content="http://v2.leaphand.com" />
+    <meta property="og:image" content="http://v2.leaphand.com/static/videos/teaser.png" />
+    <!-- <meta property="og:video" content="http://leaphand.com/static/videos/compressed.mp4" /> -->
+  
+    <meta property="article:publisher" content="http://v2.leaphand.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leap Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+    <meta name="twitter:url" content="http://v2.leaphand.com/" />
+    <meta name="twitter:image" content="http://v2.leaphand.com/static/figures/teaser.png"/>
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+  
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:player" content="" />
+    <meta name="twitter:player:width" content="640" />
+    <meta name="twitter:player:height" content="360" />
+  
+  
+    <title>LEAP Hand V2: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/isInViewport.min.js"></script>
+
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:image" content="./resources/crop_method.png" />
+    <meta name="twitter:player:width" content="640" />
+    <meta name="twitter:player:height" content="360" />
+
+</head>
+<body>
+    <style>
+        .nav-item {
+            font-size: 25px;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BCD5FA;">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Collapsible wrapper -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+                <!-- Left links -->
+                <ul class="navbar-nav mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./">Main Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./parts">Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cad_request">CAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assembly">Assembly</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+                        <bold>Parts Information</bold>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-4">
+                    <div class="card-body">
+                        <h5 class="card-title">LEAP Hand V2 can be assembled in under a day. Visit <a
+                                href="./assembly">Assembly</a> for Instructions.</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card col-sm-4">
+                    <div class="card-body">
+                        LEAP Hand with metal palm and gears costs around $4000.  I highly recommend it for its increased durability.
+                    </div>
+                </div>
+                <div class="card col-sm-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Please email me with any questions at kshaw2@andrew.cmu.edu</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">
+                        <bold>Dynamixel Components</bold>
+                    </h3>
+                    <br>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-width="200">Item</th>
+                                            <th data-width="200">Name</th>
+                                            <th data-width="100">Quantity</th>
+                                            <th data-width="400">Cost (ea.)</th>
+                                            <th data-width="100">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/w210.JPG" /></td>
+                                            <td> <a href="https://www.robotis.us/dynamixel-xm430-w210-t/"
+                                                    style="font-weight:bold">DYNAMIXEL
+                                                    XM430-W210-T</a> <br> <br>
+                                            </td>
+                                            <td>6</td>
+                                            <td>$269.90</td>
+                                            <td>$1619.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/w350.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/dynamixel-xm430-w350-t/"
+                                                    style="font-weight:bold">DYNAMIXEL
+                                                    XM430-W350-T</a>
+                                            </td>
+                                            <td>6</td>
+                                            <td>$269.90</td>
+                                            <td>$1619.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/xc330.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/dynamixel-xc330-t288-t/"
+                                                    style="font-weight:bold">DYNAMIXEL XC330-T288-T</a>
+                                            </td>
+                                            <td>5</td>
+                                            <td>$89.99</td>
+                                            <td>$449.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/hn12.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/hn12-i101-set/"
+                                                    style="font-weight:bold">DYNAMIXEL
+                                                    HN12-I101 Set</a>
+                                                    <br>
+                                                </td>            
+                                            <td>2</td>
+                                            <td>$17.80</td>
+                                            <td>$35.60</td>
+                                        </tr>
+                                        <tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/fpx330.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/fpx330-h101-4pcs-set/"
+                                                    style="font-weight:bold">DYNAMIXEL
+                                                    FPX330-H101</a>
+                                                    <br>
+                                                    You only need the BHS M2.6x6mm and M2x4mm TAP screws here, <br>
+                                                    but this is the easiest way to get them.
+                                                </td>            
+                                            <td>1</td>
+                                            <td>$9.80 (4pc)</td>
+                                            <td>$9.80</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/u2d2.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/u2d2/"
+                                                    style="font-weight:bold">DYNAMIXEL U2D2</a></td>
+                                            <td>1</td>
+                                            <td>$32.10</td>
+                                            <td>$32.10</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/dynamixel_power.JPG" />
+                                            </td>
+                                            <td><a href="https://www.robotis.us/u2d2-power-hub-board-set/"
+                                                    style="font-weight:bold">DYNAMIXEL
+                                                    Power Hub</a><br> You can also build your own <br> power cable with
+                                                5 dynamixel leads <br> and
+                                                1 power lead instead for <br> a cleaner setup. See LEAP V1 Instructions.</td>
+                                            <td>1</td>
+                                            <td>$19.00</td>
+                                            <td>$19.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/dynamixel_cable.JPG" /></td>
+                                            <td><a href="https://www.robotis.us/robot-cable-x3p-180mm-10pcs/" style="font-weight:bold">Long 180mm Dynamixel cable</a>
+                                            </td> <br>
+                                            <td>1</td>
+                                            <td>$19.00</td>
+                                            <td>$19.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img style="width:300px;" class="img-fluid"
+                                                    src="./static/part_img/xt30.jpg" /></td>
+                                            <td><a href="https://a.co/d/09CXspB" style="font-weight:bold">XT30
+                                                    Pigtail</a><br>Use this to
+                                                build your own cable instead of the PowerHub.<br>
+                                                These are not strictly necessary, but they're helpful: <br>
+                                                <a href="https://www.digikey.com/short/523wz1nj"
+                                                    style="font-weight:bold">JST EH Cable (15x)</a><br>
+                                                <a href="https://www.digikey.com/short/zqh51b3r"
+                                                    style="font-weight:bold">JST EH Housing (5x)</a>
+                                            </td> <br>
+                                            <td>1 </td>
+                                            <td>$9.00</td>
+                                            <td>$9.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <h5 class="title is-4" style="text-align: center; padding-bottom: 10px;">Other Misc. Parts</h5>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-width="200">Name</th>
+                                            <th data-width="100">Quantity</th>
+                                            <th data-width="400">Cost (ea.)</th>
+                                            <th data-width="100">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="https://a.co/d/eFoiS2e" style="font-weight:bold">Berkley Trilene Big Game Monofilament Fishing Line</a>
+                                                <br>100lb, Clear, Mono Leader, 0.99 mm Diameter
+                                            </td>
+                                            <td>1</td>
+                                            <td>$12.99</td>
+                                            <td>$12.99 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://a.co/d/eFoiS2e" style="font-weight:bold">M3 22mm TODODODODOOTOTODODOTODOTD</a></td>
+                                            <td>5</td>
+                                            <td>$19.00</td>
+                                            <td>$19.00 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://a.co/d/eFoiS2e" style="font-weight:bold">M3 6mm 3D
+                                                    printer Inserts</a></td>
+                                            <td>5</td>
+                                            <td>$19.00 (variety)</td>
+                                            <td>$19.00 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://a.co/d/dfNKxwz" style="font-weight:bold">6701-2RS Bearings 12mm x 18mm x 4mm </a></td>
+                                            <td>1</td>
+                                            <td>$9.39 (10 pack)</td>
+                                            <td>$9.39 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://a.co/d/1t5tuFV" style="font-weight:bold">Synthetic Grease</a></td>
+                                            <td>1</td>
+                                            <td>$8.41</td>
+                                            <td>$8.41</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://a.co/d/aTVbPUA" style="font-weight:bold">High-Strength Threadlocker 271</a></td>
+                                            <td>1</td>
+                                            <td>$7.99</td>
+                                            <td>$7.99</td>
+                                        </tr>
+                    <tr>
+                        <td><a href="https://a.co/d/iDNecKH" style="font-weight:bold">Polymaker PLA Pro 1 Black and 1 White Roll Set</a></td>
+                        <td>1</td>
+                        <td>$47.99</td>
+                        <td>$47.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://a.co/d/cbVsHUl" style="font-weight:bold">Polymaker Polydissolve PLA</a></td>
+                        <td>1</td>
+                        <td>$59.99</td>
+                        <td>$59.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://recreus.com/gb/filaments/24-1045-filaflex-foamy.html#/2-diameter-175_mm/9-weight-600_gr/10-colour-natural"
+                                style="font-weight:bold">Recreus Filaflex Foamy Natural 1.75mm 600g</a></td>
+                        <td>1</td>
+                        <td>$54.90</td>
+                        <td>$54.90</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://a.co/d/ahSY0wO" style="font-weight:bold">Power Supply (12v 20a)</a></td>
+                        <td>1</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://a.co/d/gWQEECW" style="font-weight:bold"> Power Cable AC <br>(Change for
+                                your
+                                Country)</a></td>
+                        <td>1</td>
+                        <td>$7.00</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://a.co/d/bVK1q2O" style="font-weight:bold">14 AWG 5v Cable</a></td>
+                        <td>1</td>
+                        <td>$9.99</td>
+                        <td>$9.99</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="list-group">
+                                <div class="list-group-item  flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Cost (Metal Parts):</h5>
+                                        <small class="text-muted">As of Dec 2024</small>
+                                    </div>
+                                    <p class="mb-1 fs-6">Dynamixel: $1578.34</p>
+                                    <p class="mb-1 fs-6">Metal Parts: $1000</p>
+                                    <p class="mb-1 fs-6">Other Parts: $193.40</p>
+                                    <p class="mb-1 fs-5">Total: $1771.74</p>
+                                    <small class="text-muted">Please see CAD tab for metal 3D printed parts from PCBway.  Highly Recommended Upgrade.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="list-group">
+                                <div class="list-group-item flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Cost (Plastic):</h5>
+                                        <small class="text-muted">As of Dec 2024</small>
+                                    </div>
+                                    <p class="mb-1 fs-6">Dynamixel: $520.90</p>
+                                    <p class="mb-1 fs-6">Other Parts: $193.40</p>
+                                    <p class="mb-1 fs-5">Total: $714.30</p>
+                                    <p class="mb-1 fs-6">&nbsp;</p>
+                                    <small class="text-muted">Contact us at kshaw2@andrew.cmu.edu if you need help
+                                        obtaining parts.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </td>
+                </tr>
+                <br><br>
+
+                          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+                            <bold>Tools Required</bold>
+                          </h3>
+                          <div class="row">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th data-width="200">Name</th>
+                                  <th data-width="100">Quantity</th>
+                                  <th data-width="400">Cost (ea.)</th>
+                                  <th data-width="100">Total</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td><a href="https://www.snapmaker.com/en-US/j1s-idex-3d-printer"
+                                        style="font-weight:bold">Snapmaker J1S</a> <br>
+                                            We can send you fingers instead if you don't want to print them.  Email me.<br>
+                                            You cannot use a single nozzle Bambu, as the AMS cannot switch TPU.  <br>
+                                            I only provide settings for J1s, but Prusa XL with two nozzles is theoretically possible.
+                                        </td>
+                                    <td>1</td>
+                                    <td>$899.99</td>
+                                    <td>$899.99</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://a.co/d/2hh4sQG"
+                                        style="font-weight:bold">0.2mm Printer Nozzle</a>
+                                        </td>
+                                    <td>1</td>
+                                    <td>$5.79</td>
+                                    <td>$5.79</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://a.co/d/2Ra7sWO"
+                                        style="font-weight:bold">3D Printer Nozzle Wrench</a>
+                                        </td>
+                                    <td>1</td>
+                                    <td>$9.98</td>
+                                    <td>$9.98</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://a.co/d/3fNeXmC"
+                                        style="font-weight:bold">Cleaning Filament</a>  (to clean out TPU nozzle)
+                                        </td>
+                                    <td>1</td>
+                                    <td>$12.99</td>
+                                    <td>$12.99</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://a.co/d/2bgU1Dr"
+                                        style="font-weight:bold">Clog Poke tool</a>
+                                        </td>
+                                    <td>1</td>
+                                    <td>$12.99</td>
+                                    <td>$12.99</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="https://a.co/d/cN8NnEh" style="font-weight:bold">M2 and M3 Hex Wrenches</a> </td>
+                                  <td>1</td>
+                                  <td>$9.99 (variety)</td>
+                                  <td>$9.99</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="https://a.co/d/aBv5tl9" style="font-weight:bold">Motorized Screwdriver</a></td>
+                                  <td>1</td>
+                                  <td>$44.99
+                                  </td>
+                                  <td>$44.99</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="https://a.co/d/5UFjtp6" style="font-weight:bold">Soldering Iron</a> <br>
+                                  <a href="https://a.co/d/j5mRx3v" style="font-weight:bold">These tips</a> are useful but not necessary.</td>
+                                  <td>1</td>
+                                  <td>$12.99</td>
+                                  <td>$12.99</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                <br><br>
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+                    <bold>3D Printed Parts</bold>
+                <h3 class="title is-5" style="text-align: center; padding-bottom: 10px;">
+                    <bold>Please go to the <a href="./cad_request">CAD tab</a> to download the files.</bold>
+                    </h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <!-- <a href="./resources/CoRL-Energy-Locomotion.pdf" class="large-font bottom_buttons">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+                <!-- <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+                <br />
+                <p>Page template borrowed from <a href="https://nerfies.github.io"><span
+                            class="dnerf">Nerfies</span></a>.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var mainLoopId = setInterval(function () {
+            $('video').not('#teaser').each(function () {
+                if ($(this).is(":in-viewport")) {
+                    // $(this)[0].play();
+                } else {
+                    $(this)[0].pause();
+                }
+            })
+        }, 200);
+    </script>
+</body>
+
+</html>

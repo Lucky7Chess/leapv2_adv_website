@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    video.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    image.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+<meta charset="utf-8">
+<meta name="description" content="Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning">
+<meta name="keywords" content="Robot Hand, Dexterous Manipuation, Machine Learning">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:site_name" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+<meta property="og:type" content="video.other" />
+<meta property="og:title" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+<meta property="og:description" content="LEAP Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+<meta property="og:url" content="http://v2.leaphand.com" />
+<meta property="og:image" content="http://v2.leaphand.com/static/videos/teaser.png" />
+<!-- <meta property="og:video" content="http://leaphand.com/static/videos/compressed.mp4" /> -->
+
+<meta property="article:publisher" content="http://v2.leaphand.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Leap Hand: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning" />
+<meta name="twitter:url" content="http://v2.leaphand.com/" />
+<meta name="twitter:image" content="http://v2.leaphand.com/static/figures/teaser.png"/>
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<meta name="twitter:card" content="player" />
+<meta name="twitter:player" content="" />
+<meta name="twitter:player:width" content="640" />
+<meta name="twitter:player:height" content="360" />
+
+
+<title>LEAP Hand V2: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning</title>
+
+  <link href="./static/css/fonts.googleapis.com_css_family=Google+Sans_Noto+Sans_Castoro.css" rel="stylesheet">
+
+  <script src="./static/js/ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.min.js"></script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_gh_jpswalsh_academicons@1_css_academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_css_bootstrap.min.css">
+  <script src="./static/js/isInViewport.min.js"></script>
+  <script src="./static/js/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_js_bootstrap.bundle.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <style>
+    .nav-item {
+      font-size: 25px;
+
+    }
+
+    .navbar-nav .nav-link {
+      margin-right: 7px;
+      margin-left: 7px;
+    }
+  </style>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BCD5FA;">
+      <!-- Container wrapper -->
+      <div class="container">
+          <!-- Collapsible wrapper -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+              <!-- Left links -->
+              <ul class="navbar-nav mb-5 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./">Main Paper</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./parts">Parts</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="./cad_request">CAD</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./assembly">Assembly</a>
+                  </li>
+              </ul>
+              <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>3D Printed Parts</bold>
+          </h3>
+          <h3 class="title is-5" style="text-align: center; padding-bottom: 10px;">
+            <bold>Fill out this form, and the CAD files for the 3D printed parts will be given immediately.</bold><br>
+          </h3>
+          
+
+          <form action="https://leaphand.com/read-form" method="post">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input name="name" type="text" class="form-control" id="name" placeholder="Full Name">
+              <span style="display:block; height: 0.5em;"></span>
+              <label for="formGroupExampleInput2">Email</label>
+              <input name="email" type="text" class="form-control" id="email" placeholder="Email">
+              <span style="display:block; height: 0.5em;"></span>
+              <label for="formGroupExampleInput2">Organization</label>
+              <input name="org" type="text" class="form-control" id="org" placeholder="Organization">
+            </div>
+            <span style="display:block; height: 0.5em;"></span>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <br>
+          By filling out this form, you agree to our CC BY-NC-SA Attribution-NonCommercial-ShareAlike license which allows you to use and build upon our work non-commercially.
+          <br> The design for LEAP Hand is provided as-is and without warranty.
+          <img src="./static/figures/license.png">
+          <br>
+          If you have already filled this out:
+          <a href="./leap_cad" class="btn btn-primary">Skip</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><bold>Purchase a Full Parts Kit</bold></h3> 
+        </div>   
+      </div>
+      <div class = "row" id="order">
+        <div class="card col-sm-3">
+          <div class="card-body">
+            <h5 class="card-title">Cost:</h5>
+            <p class="card-text">By popular demand, we ship these parts together at no additional cost as a convenience!  Will ship out within 3 business days after payment.</p>
+          </div>
+      </div>
+        <div class="card col-sm-3">
+          <div class="card-body">
+            <h5 class="card-title">All Parts Included:</h5>
+            <div class="card-body">
+              <li class="list-group-item">Dynamixel Components</li>
+              <li class="list-group-item">Other Parts </li>
+              <li class="list-group-item">Tools</li>
+              <li class="list-group-item">Professionally 3D printed Parts</li>
+              <li class="list-group-item">Soft Fingertips</li>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-3">
+          <div class="card-body">
+            <h5 class="card-title">We offer pre-assembled Hands at a nominal additional charge and lead time.</h5>
+          </div>
+        </div>
+        <div class="card col-sm-3">
+          <div class="card-body">
+            <h5 class="card-title">Additional Customer Support offered to these kits to help with any questions.</h5>
+          </div>
+        </div>
+      </div> 
+      <br>
+      <h3 class="title is-5" style="text-align: center; padding-bottom: 10px;"><bold>Email us at kshaw2@andrew.cmu.edu with this info:</bold></h3> 
+            <li class="list-group-item">Which Hand "Right/Left" "Regular/Lite", "Kit/Assembled" you want.</li>
+            <li class="list-group-item">Your Shipping address.</li>
+            <li class="list-group-item">Your Tax Exemption Certificate (If you have one).</li>
+            <li class="list-group-item">We will send you back a quote and a payment link. (We accept CC or Wire Transfer)</li>
+            <li class="list-group-item">Note: We are officially registered as Dexbotics LLC. in the Commonwealth of PA and can provide documentation.</li>
+            <li class="list-group-item">We are affiliated with the authors but provide parts at the same cost as buying it yourself.  Just a service for the community :)</li>
+            <li class="list-group-item">Assembled hands will incur an additional nominal cost.</li>
+            <li class="list-group-item">We will make every effort to ship internationally.</li>
+        </div>
+      </div> 
+    </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <!-- <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+        <br />
+        <!-- <p>Dexbotics LLC.</p> -->
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var mainLoopId = setInterval(function () {
+      $('video').not('#teaser').each(function () {
+        if ($(this).is(":in-viewport")) {
+          $(this)[0].play();
+        } else {
+          $(this)[0].pause();
+        }
+      })
+    }, 200);
+
+
+  </script>
+</body>
+
+</html>
